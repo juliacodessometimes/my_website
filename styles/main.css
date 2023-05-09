@@ -16,41 +16,94 @@ html {
   height: 100%;
 }
 
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  background-color: transparent;
-}
-
-h4 {
-  font-size: 19px;
-  font-weight: 500;
-  text-align: left;
-  padding: 2px;
-}
-
-h5 {
-  font-size: 19px;
-  font-weight: 500;
-  text-align: center;
-  padding: 2px;
-  background-color: transparent;
+p {
+  color: #777;
+  font-family: Arimo, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 body {
+  height: 100%;
+  width: 100%;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  font-family: roboto;
-  font-weight: 500;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  font-family: Arimo, Arial, sans-serif;
   background-color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+}
+body .homepage {
+  height: 100%;
+  width: 100%;
+}
+body .homepage .site-header {
+  top: 40px;
   bottom: 0;
+  left: 40px;
+  width: 260px;
+  max-height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-right: 40px;
+  position: fixed;
+  color: #777;
+  font-family: Arimo, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+body .homepage .site-header .site-description {
+  width: 220px;
+}
+body .homepage .site-header .site-nav li {
+  padding: 0.75em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .site-description {
+    margin-bottom: 3em;
+  }
+  .menu-toggle {
+    background: 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    color: #aaa;
+    font-family: Arimo, Arial, sans-serif;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body .homepage {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 5% 5% 5%;
+  }
+  body .homepage .site-header {
+    height: 100%;
+    width: 100%;
+    position: inherit;
+    border: 0;
+    outline: 0;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+  body .homepage .site-header .site-logo {
+    margin-bottom: 3.5em;
+    text-align: center;
+  }
+  body .homepage .site-header .site-description {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
