@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: pixelfont;
   src: url(mini_pixel-7.ttf);
@@ -186,18 +187,36 @@ body .homepage .site-header .site-nav li {
     padding: 0;
     width: 100%;
   }
-  body .homepage .site-header .menu-toggle {
+  body .homepage .site-header .site-nav .menu-toggle {
     position: relative;
     width: 100%;
-    background-color: #eee;
+    background-color: rgb(132, 237, 150);
     border: none;
-    color: #444;
+    color: #666565;
     cursor: pointer;
     padding: 0.75em 0;
     font-family: pixelfont2;
     font-size: 15px;
   }
-  body .homepage .site-header .site-nav li {
+  body .homepage .site-header .site-nav .menu-toggle:hover {
+    background-color: #eee;
+  }
+  body .homepage .site-header .site-nav .menu-toggle::after {
+    content: "↓";
+    color: #666565;
+    font-weight: bold;
+    float: center;
+    margin-left: 15px;
+  }
+  body .homepage .site-header .site-nav .active::after {
+    content: "↑";
+  }
+  body .homepage .site-header .site-nav .page-list {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.2s ease-in-out;
+  }
+  body .homepage .site-header .site-nav .page-list li {
     padding: 0.75em 0;
     font-family: pixelfont2;
     font-size: 15px;

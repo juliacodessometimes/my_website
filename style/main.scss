@@ -7,6 +7,11 @@
     font-family: pixelfont2;
     src: url(pcsenior.ttf);
 }
+//colors
+$green: rgb(132, 237, 150);
+$lightgray: rgb(188, 183, 183);
+$textcolor: #666565;
+
 *:focus {
     box-shadow: none;
 }
@@ -19,7 +24,7 @@ html {
     height: 100%;
 }
 p {
-    color: #666565;
+    color: $textcolor;
     font-size: 25px;
     line-height: 1.5;
     font-family: pixelfont;
@@ -34,7 +39,7 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
-    background-color: rgb(132, 237, 150);
+    background-color: $green;
     .homepage {
         height: 100%;
         width: 100%;
@@ -54,7 +59,7 @@ body {
             max-height: 85%;
             padding-right: 40px;
             overflow: hidden;
-            color: #666565;
+            color: $textcolor;
             font-size: 16px;
             line-height: 1.5;
             .site-logo {
@@ -75,7 +80,7 @@ body {
                     bottom: 10%;
                     width: 90%;
                     height: 90%;
-                    background-color: rgb(188, 183, 183);
+                    background-color: $lightgray;
                     z-index: 1;
                 }
             }
@@ -159,7 +164,7 @@ body {
                         bottom: 10%;
                         width: 90%;
                         height: auto;
-                        background-color: rgb(188, 183, 183);
+                        background-color: $lightgray;
                         z-index: 1;
                     }
                     img {
@@ -180,22 +185,40 @@ body {
                     padding: 0;
                     width: 100%;
                 }
-                .menu-toggle {
-                    position: relative;
-                    width: 100%;
-                    background-color: #eee;
-                    border: none;
-                    color: #444;
-                    cursor: pointer;
-                    padding: 0.75em 0;
-                    font-family: pixelfont2;
-                    font-size: 15px;
-                }
                 .site-nav {
-                    li {
+                    .menu-toggle {
+                        position: relative;
+                        width: 100%;
+                        background-color: $green;
+                        border: none;
+                        color: $textcolor;
+                        cursor: pointer;
                         padding: 0.75em 0;
                         font-family: pixelfont2;
                         font-size: 15px;
+                    }
+                    .menu-toggle:hover {
+                        background-color: #eee;
+                    }
+                    .menu-toggle::after {
+                        content: '\2193';
+                        color: $textcolor;
+                        font-weight: bold;
+                        float: center;
+                        margin-left: 15px;
+                    }
+                    .active::after{
+                        content: '\2191'
+                    }
+                    .page-list {
+                        overflow: hidden;
+                        max-height: 0;
+                        transition: 0.2s ease-in-out;
+                        li {
+                            padding: 0.75em 0;
+                            font-family: pixelfont2;
+                            font-size: 15px;
+                        }
                     }
                 }
             }
