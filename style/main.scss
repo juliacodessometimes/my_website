@@ -23,6 +23,12 @@ html {
     width: 100%;
     height: 100%;
 }
+a {
+    color: $textcolor;
+}
+a:hover{
+    color:#eee;
+}
 p {
     color: $textcolor;
     font-size: 25px;
@@ -31,6 +37,11 @@ p {
 }
 h1 {
     font-size: 50px;
+    font-family: pixelfont2;
+    color: $textcolor
+}
+h3 {
+    font-size: 40px;
     font-family: pixelfont2;
 }
 body {
@@ -96,7 +107,23 @@ body {
                     font-family: pixelfont2;
                     font-size: 15px;
                 }
+                li:hover {
+                    color: #eee;
+                    cursor: pointer;
+                }
             }
+        }
+        #aboutme {
+            position:fixed;
+            display: flex;
+            flex-direction: column;
+            left: 400px;
+            top: 100px;
+            padding-left: 60px;
+            padding-top: 60px;
+            padding-right: 20px;
+            height: 100%;
+            width: 60%;
         }
     }
 }

@@ -21,6 +21,14 @@ html {
   height: 100%;
 }
 
+a {
+  color: #666565;
+}
+
+a:hover {
+  color: #eee;
+}
+
 p {
   color: #666565;
   font-size: 25px;
@@ -30,6 +38,12 @@ p {
 
 h1 {
   font-size: 50px;
+  font-family: pixelfont2;
+  color: #666565;
+}
+
+h3 {
+  font-size: 40px;
   font-family: pixelfont2;
 }
 
@@ -97,6 +111,22 @@ body .homepage .site-header .site-nav li {
   padding: 0.75em 0;
   font-family: pixelfont2;
   font-size: 15px;
+}
+body .homepage .site-header .site-nav li:hover {
+  color: #eee;
+  cursor: pointer;
+}
+body .homepage #aboutme {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 400px;
+  top: 100px;
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-right: 20px;
+  height: 100%;
+  width: 60%;
 }
 
 @media screen and (min-width: 768px) {
