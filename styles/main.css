@@ -129,7 +129,9 @@ body .homepage .site-header .site-nav li {
     top: 0;
     left: 0;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    line-height: 1.3cm;
   }
   body .homepage .site-header {
     height: auto;
@@ -137,7 +139,7 @@ body .homepage .site-header .site-nav li {
     position: relative;
     border: 0;
     outline: 0;
-    margin: auto;
+    margin: 0;
     padding-top: 0;
     padding-right: 0;
     left: 0;
@@ -147,9 +149,10 @@ body .homepage .site-header .site-nav li {
   }
   body .homepage .site-header .site-logo {
     position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    margin: 0;
+    aspect-ratio: 1/1;
+    width: 70%;
+    height: auto;
+    margin: auto;
     text-align: center;
   }
   body .homepage .site-header .site-logo #box {
@@ -163,11 +166,9 @@ body .homepage .site-header .site-nav li {
   }
   body .homepage .site-header .site-logo img {
     position: absolute;
-    max-width: 90%;
-    max-height: 90%;
-    min-width: 279px;
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 90%;
+    min-width: 200px;
     top: 10%;
     left: 10%;
     z-index: 2;
