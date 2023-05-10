@@ -21,7 +21,7 @@ html {
 }
 
 p {
-  color: #777;
+  color: #666565;
   font-size: 25px;
   line-height: 1.5;
   font-family: pixelfont;
@@ -68,14 +68,14 @@ body .homepage .site-header .site-logo {
   position: relative;
   height: 325px;
   width: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 body .homepage .site-header .site-logo img {
   position: absolute;
   width: 90%;
   top: 10%;
   left: 10%;
-  z-index: 0;
+  z-index: 2;
 }
 body .homepage .site-header .site-logo #box {
   position: absolute;
@@ -90,6 +90,7 @@ body .homepage .site-header .site-description {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 1em;
 }
 body .homepage .site-header .site-nav li {
   padding: 0.75em 0;
@@ -121,29 +122,78 @@ body .homepage .site-header .site-nav li {
     padding: 8% 8% 8%;
     overflow: hidden;
   }
-  body .homepage .site-header {
-    height: 100%;
+  body .homepage #my-name {
+    position: relative;
     width: 100%;
-    position: inherit;
+    height: auto;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  body .homepage .site-header {
+    height: auto;
+    width: 100%;
+    position: relative;
     border: 0;
     outline: 0;
     margin: auto;
-    padding-top: 2em;
+    padding-top: 0;
     padding-right: 0;
+    left: 0;
+    top: 0;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
   }
   body .homepage .site-header .site-logo {
+    position: relative;
     width: 100%;
-    padding: 0;
-    margin-bottom: 2.5em;
+    padding-bottom: 100%;
+    margin: 0;
     text-align: center;
-    margin: auto;
+  }
+  body .homepage .site-header .site-logo #box {
+    position: absolute;
+    top: 0;
+    bottom: 10%;
+    width: 90%;
+    height: auto;
+    background-color: rgb(188, 183, 183);
+    z-index: 1;
+  }
+  body .homepage .site-header .site-logo img {
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 279px;
+    width: 100%;
+    height: auto;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
   }
   body .homepage .site-header .site-description {
+    position: relative;
     text-align: center;
-    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 0;
     width: 100%;
+  }
+  body .homepage .site-header .menu-toggle {
+    position: relative;
+    width: 100%;
+    background-color: #eee;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    padding: 0.75em 0;
+    font-family: pixelfont2;
+    font-size: 15px;
+  }
+  body .homepage .site-header .site-nav li {
+    padding: 0.75em 0;
+    font-family: pixelfont2;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
