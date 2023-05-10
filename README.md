@@ -1,2 +1,5 @@
 # my_website
-it's my portfolio website!
+
+this will be my portfolio website!
+
+it's a work in progess (:
