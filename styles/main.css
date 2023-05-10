@@ -1,6 +1,10 @@
 @font-face {
-  font-family: roboto;
-  src: url(roboto_condensed.woff2);
+  font-family: pixelfont;
+  src: url(mini_pixel-7.ttf);
+}
+@font-face {
+  font-family: pixelfont2;
+  src: url(pcsenior.ttf);
 }
 *:focus {
   box-shadow: none;
@@ -18,9 +22,14 @@ html {
 
 p {
   color: #777;
-  font-family: Arimo, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.5;
+  font-family: pixelfont;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: pixelfont2;
 }
 
 body {
@@ -29,33 +38,63 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  font-family: Arimo, Arial, sans-serif;
-  background-color: white;
+  background-color: rgb(132, 237, 150);
 }
 body .homepage {
   height: 100%;
   width: 100%;
 }
-body .homepage .site-header {
-  top: 40px;
-  bottom: 0;
-  left: 40px;
-  width: 260px;
-  max-height: 100%;
-  overflow: auto;
-  overflow-x: hidden;
-  padding-right: 40px;
+body .homepage #my-name {
   position: fixed;
-  color: #777;
-  font-family: Arimo, Arial, sans-serif;
+  height: 60px;
+  top: 15px;
+  left: 20px;
+  margin-bottom: 25px;
+}
+body .homepage .site-header {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 50px;
+  width: 350px;
+  max-height: 85%;
+  padding-right: 40px;
+  overflow: hidden;
+  color: #666565;
   font-size: 16px;
   line-height: 1.5;
 }
+body .homepage .site-header .site-logo {
+  position: relative;
+  height: 325px;
+  width: 100%;
+  margin-bottom: 3em;
+}
+body .homepage .site-header .site-logo img {
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 10%;
+  z-index: 0;
+}
+body .homepage .site-header .site-logo #box {
+  position: absolute;
+  top: 0;
+  bottom: 10%;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(188, 183, 183);
+  z-index: 1;
+}
 body .homepage .site-header .site-description {
-  width: 220px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 body .homepage .site-header .site-nav li {
   padding: 0.75em 0;
+  font-family: pixelfont2;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -63,12 +102,7 @@ body .homepage .site-header .site-nav li {
     margin-bottom: 3em;
   }
   .menu-toggle {
-    background: 0 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    color: #aaa;
-    font-family: Arimo, Arial, sans-serif;
-    padding: 0;
-    width: 100%;
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -84,7 +118,8 @@ body .homepage .site-header .site-nav li {
     border: 0;
     margin: 0;
     outline: 0;
-    padding: 5% 5% 5%;
+    padding: 8% 8% 8%;
+    overflow: hidden;
   }
   body .homepage .site-header {
     height: 100%;
@@ -93,12 +128,17 @@ body .homepage .site-header .site-nav li {
     border: 0;
     outline: 0;
     margin: auto;
-    padding: 0;
+    padding-top: 2em;
+    padding-right: 0;
     text-align: center;
+    overflow: hidden;
   }
   body .homepage .site-header .site-logo {
-    margin-bottom: 3.5em;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2.5em;
     text-align: center;
+    margin: auto;
   }
   body .homepage .site-header .site-description {
     text-align: center;
