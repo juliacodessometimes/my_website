@@ -119,8 +119,8 @@ body .homepage .site-header .site-nav li {
     border: 0;
     margin: 0;
     outline: 0;
-    padding: 8% 8% 8%;
-    overflow: hidden;
+    padding: 8% 8% 0%;
+    overflow: auto;
   }
   body .homepage #my-name {
     position: relative;
@@ -132,6 +132,11 @@ body .homepage .site-header .site-nav li {
     margin-bottom: 15px;
     font-size: 2.5em;
     line-height: 1.3cm;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-indent: -2em;
   }
   body .homepage .site-header {
     height: auto;
@@ -145,12 +150,12 @@ body .homepage .site-header .site-nav li {
     left: 0;
     top: 0;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
   }
   body .homepage .site-header .site-logo {
     position: relative;
     aspect-ratio: 1/1;
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: auto;
     text-align: center;
